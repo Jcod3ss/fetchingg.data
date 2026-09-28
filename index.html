@@ -4,10 +4,10 @@
 
   async function setup () {
     // fetch data from the "Dog CEO" REST API
-    const url = 'https://dog.ceo/api/breed/akita/images/random'
+    const url ='https://dog.ceo/api/breeds/akita/images/random'
     const res = await fetch(url)
     const data = await res.json()
-    // press f12 to open console
+    // press f12 to open console (fn + f12 on mac)
     console.log(data)
     // create an <img> and add it to the pag
     nn.create('img') 
